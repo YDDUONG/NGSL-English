@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NGSL</string>
+    <string name="inster">Inster</string>
+    <string name="getall">getAll</string>
+    <string name="textview">TextView</string>
+</resources>
