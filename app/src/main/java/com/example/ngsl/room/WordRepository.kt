@@ -8,11 +8,6 @@ class WordRepository private constructor(context: Context) {
         AppDatabase.getInstance(context).wordDao()
     }
 
-//    init {
-//        val appDatabase = AppDatabase.getInstance(context)
-//        wordDao = appDatabase.wordDao()
-//    }
-
     //获取所有数据
     val allWord = wordDao.selectAllValueFromWord()
 

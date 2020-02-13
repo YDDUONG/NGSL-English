@@ -22,6 +22,7 @@ class AppDatabaseWorker(context: Context, workerParams: WorkerParameters) :
 
                     val wordRepository = WordRepository.getInstance(applicationContext)
                     wordRepository.insertAll(wordList)
+                    Log.v(TAG, "加载数据完成")
 
                     Result.success()
                 }

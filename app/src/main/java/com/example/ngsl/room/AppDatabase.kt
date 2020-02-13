@@ -13,20 +13,6 @@ import com.example.ngsl.DATABASE_NAME
 abstract class AppDatabase : RoomDatabase() {
     abstract fun wordDao(): WordDao
 
-//    companion object {
-//        @Volatile
-//        private var instance: AppDatabase? = null
-//
-//        fun getInstance(context: Context): AppDatabase {
-//            return instance ?: synchronized(this) {
-//                instance ?: Room.databaseBuilder(
-//                    context,
-//                    AppDatabase::class.java,
-//                    DATABASE_NAME
-//                ).build().also { instance = it }
-//            }
-//        }
-//    }
     companion object {
 
         // For Singleton instantiation

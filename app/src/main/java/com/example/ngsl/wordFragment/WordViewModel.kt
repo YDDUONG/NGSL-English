@@ -11,7 +11,8 @@ class WordViewModel(application: Application) : AndroidViewModel(application) {
     private val _allWord: LiveData<List<Word>> by lazy {
         WordRepository.getInstance(application.applicationContext).allWord
     }
-    //    init {
+//    private val _allWord: LiveData<List<Word>>
+//        init {
 //        //word仓库
 //        val wordRepository = WordRepository.getInstance(application.applicationContext)
 //        _allWord = wordRepository.allWord
