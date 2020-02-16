@@ -14,4 +14,8 @@ interface WordDao {
     //查询全部数据
     @Query("SELECT * FROM word_table")
     fun selectAllValueFromWord(): LiveData<List<Word>>
+
+    //查询单词
+    @Query("select * from word_table where english like :pattern")
+    fun searchWords(pattern: String): LiveData<List<Word>>
 }
